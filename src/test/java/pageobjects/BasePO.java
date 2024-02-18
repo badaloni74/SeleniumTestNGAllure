@@ -60,10 +60,6 @@ public abstract class BasePO {
         return webElement;
     }
 
-    protected void go(String url){
-        driverPO.get(url);
-    }
-
     private WebElement retornaWE(String literal){
         Assert.assertFalse(llistaWE.isEmpty(),"No s'han trobat elements per xPath: " + literal);
         webElement = llistaWE.get(0);

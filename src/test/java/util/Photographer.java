@@ -7,7 +7,7 @@ import org.openqa.selenium.WebDriver;
 
 public class Photographer {
 
-    private WebDriver driverPhoto;
+    private final WebDriver driverPhoto;
 
     public Photographer(WebDriver driver) {
         driverPhoto = driver;
