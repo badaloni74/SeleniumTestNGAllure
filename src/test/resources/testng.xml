@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Google" verbose="2">
+    <listeners>
+<!--
+        <listener class-name="listeners.SuiteListener"/>
+        <listener class-name="listeners.AnnotationTransformerListener"/>
+        <listener class-name="listeners.TestListener"/>
+-->
+    </listeners>
+    <test name="Google">
+        <packages>
+            <package name=".*"/>
+        </packages>
+    </test>
+</suite>
