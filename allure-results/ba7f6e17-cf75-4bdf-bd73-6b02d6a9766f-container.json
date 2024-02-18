@@ -1,0 +1,1 @@
+{"uuid":"ba7f6e17-cf75-4bdf-bd73-6b02d6a9766f","name":"Default Suite","children":["415374b1-c432-45e7-a5cb-9f6a7c14dbab"],"befores":[],"afters":[{"name":"tearDown","status":"passed","stage":"finished","description":"Tancar el browser","steps":[],"attachments":[],"parameters":[],"start":1708286580527,"stop":1708286580527}],"start":1708286575533,"stop":1708286580527}
