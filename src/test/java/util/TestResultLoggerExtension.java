@@ -7,12 +7,12 @@ public class TestResultLoggerExtension /*implements TestWatcher*/ {
     /*
     @Override
     public void testFailed(ExtensionContext context, Throwable cause) {
-        photo.takeScreenshot();
+        photo.takePhoto();
     }
 
     @Override
     public void testFailed(ExtensionContext context, Throwable cause) {
-        photo.takeScreenshot();
+        photo.takePhoto();
     }
     */
 }

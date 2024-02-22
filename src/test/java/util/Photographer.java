@@ -7,14 +7,14 @@ import org.openqa.selenium.WebDriver;
 
 public class Photographer {
 
-    private final WebDriver driverPhoto;
+    private WebDriver driver;
 
     public Photographer(WebDriver driver) {
-        driverPhoto = driver;
+        this.driver = driver;
     }
 
     @Attachment(value = "Screenshot", type = "image/png")
-    public byte[] takeScreenshot() {
-        return ((TakesScreenshot) driverPhoto).getScreenshotAs(OutputType.BYTES);
+    public byte[] takePhoto() {
+        return ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
     }
 }
