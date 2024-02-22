@@ -1,13 +1,13 @@
 import io.qameta.allure.Step;
 import org.testng.Assert;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import io.qameta.allure.Feature;
 
-@Feature("Test01")
+//@Feature("Test01")
 public class Test01 {
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
         System.out.println("Hello World");
-    }
+    }*/
 
     @Test(description = "Test01 - Prova correcta")
     public void test01_OK() {
