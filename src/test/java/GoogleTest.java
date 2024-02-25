@@ -82,4 +82,18 @@ public class GoogleTest implements iniciarWebDriver {
         iniciarTest();
     }
 
+    @BeforeSuite
+    void beforeSuite() {
+        System.out.println("Before Suite");
+    }
+
+    @BeforeClass
+    void beforeClass() {
+        System.out.println("Before Class");
+    }
+
+    @AfterClass
+    void afterClass() {
+        System.out.println("After Class");
+    }
 }

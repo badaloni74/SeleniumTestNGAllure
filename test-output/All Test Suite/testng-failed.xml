@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" parallel="classes" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="parametre2" value="PARAMETRE02"/>
+  <parameter name="parametre1" value="PARAMETRE01"/>
+  <test thread-count="3" parallel="classes" name="Dependency(failed)">
+    <classes>
+      <class name="DependencyExample">
+        <methods>
+          <include name="apaguemCotxe2"/>
+          <include name="conduimCotxe"/>
+          <include name="apaguemCotxe"/>
+          <include name="engeguemCotxe"/>
+        </methods>
+      </class> <!-- DependencyExample -->
+    </classes>
+  </test> <!-- Dependency(failed) -->
+  <test thread-count="3" parallel="classes" name="Google(failed)">
+    <classes>
+      <class name="GoogleTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="beforeSuite"/>
+          <include name="buscarDFDFDFD"/>
+          <include name="finalTest"/>
+          <include name="afterClass"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- GoogleTest -->
+    </classes>
+  </test> <!-- Google(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

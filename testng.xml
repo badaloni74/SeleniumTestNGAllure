@@ -1,14 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="All Test Suite">
-    <test verbose="2" preserve-order="true" name="C:/Coses/Selenium/SeleniumTestNGAllure">
+<suite name="All Test Suite" parallel="classes" thread-count="3">
+    <parameter name="parametre1" value="PARAMETRE01"/>
+    <parameter name="parametre2" value="PARAMETRE02"/>
+    <test verbose="2" preserve-order="true" name="SeleniumTestNGAllure">
         <classes>
-            <class name="Test01"></class>
-            <class name="GoogleTest"></class>
-            <class name="Test02">
-                <methods></methods>
+            <class name="Test01">
+                <methods>
+                    <include name="tc01_OK"/>
+                    <include name="tc04_OK"/>
+                    <include name="tc06_OK"/>
+                    <exclude name="tc05_OK"/>
+                    <include name="tc07_OK"/>
+                </methods>
             </class>
+            <class name="Test02">
+                <methods>
+                    <exclude name="tc01_OK"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Dependency">
+        <classes>
+            <class name="DependencyExample"/>
+        </classes>
+    </test>
+    <test name="Google">
+        <classes>
+            <class name="GoogleTest"/>
+        </classes>
+    </test>
+    <test name="Groups">
+        <groups>
+            <run>
+                <include name="Grup1"/>
+                <exclude name="Grup2"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="GroupExample"/>
         </classes>
     </test>
 </suite>

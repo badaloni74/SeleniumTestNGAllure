@@ -11,20 +11,20 @@ public class Test02 {
         System.out.println("Hello World");
     }
 
-    @Test(description = "Test01 - Prova correcta")
-    @Description("PU2: Test01 - Prova correcta")
-    public void test01_OK() {
+    @Test(description = "Test02 TC01 - Prova correcta")
+    @Description("PU2: Test02 TC01 - Prova correcta")
+    public void tc01_OK() {
         pas1();
         pas2();
         System.out.println("Prova correcta");
     }
 
-    @Step("PU2: Step01")
+    @Step("Test02 PU2: Step01")
     public void pas1() {
         System.out.println("Step 01");
     }
 
-    @Step("PU2: Step02")
+    @Step("Test02 PU2: Step02")
     @Deprecated
     public void pas2() {
         System.out.println("Step 02");
@@ -43,14 +43,14 @@ public class Test02 {
         Assert.fail("Prova fallida: true == false");
     }
 
-    @Test
-    public void PU2_test04_OK(){
+    @Test(description = "Test02 PU2: Test04 - Prova correcta")
+    public void PU2_tc04_OK(){
         Assert.assertTrue(true, "Prova passed: true == true");
     }
 
-    @Test(description = "PU2: Test05 Prova correcta")
+    @Test(description = "Test02 - TC05 Prova correcta")
     //@Ignore
-    public void test05_OK() {
+    public void tc05_OK() {
         System.out.println("Test05 - Prova correcta");
     }
 
