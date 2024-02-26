@@ -32,6 +32,11 @@
             <class name="GoogleTest"/>
         </classes>
     </test>
+    <test name="RestAssured">
+        <classes>
+            <class name="RestAssuredTest"/>
+        </classes>
+    </test>
     <test name="Groups">
         <groups>
             <run>
